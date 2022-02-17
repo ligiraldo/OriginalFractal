@@ -8,7 +8,7 @@ void draw(){
 }
 void myFractal(int x, int y, int siz){
   fill((float)Math.random()*255,(float)Math.random()*255,(float)Math.random()*255);
-  circle(x,y,siz);
+  ellipse(x,y,siz,siz);
   if(siz > 10){
     myFractal(x-siz/3,y, siz/3);
     myFractal(x+siz/3,y, siz/3);
